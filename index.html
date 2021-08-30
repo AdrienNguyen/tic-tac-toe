@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="game-title">Tic Tac Toe</div>
+        <div class="game-player">
+            <div class="human">
+                <img class="xo-icon-lg" src="assets/human.png" alt="icon-human">
+            </div>
+            <div class="computer">
+                <img class="xo-icon-lg" src="assets/computer.png" alt="icon-computer">
+            </div>
+        </div>
+        <div class="info">
+            <div class="turn" id="o">
+                <div class="xo">
+                    <img class="xo-icon" src="assets/icon-o.png" alt="icon-o">
+                </div>
+                <div class="score">
+					<p id="score-o">0</p>
+				</div>
+            </div>
+            <div class="turn" id="x">
+                <div class="score">
+                    <p id="score-x">0</p>
+                </div>
+                <div class="xo">
+                    <img class="xo-icon" src="assets/icon-x.png" alt="icon-x">
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapper-status">
+            <div id="status">
+                <img class="xo-icon-lg" src="assets/human.png" alt="icon-human"> 
+                Turn
+            </div>
+        </div>
+
+        <div class="board">
+            <div class="num" id="1"></div>
+            <div class="num" id="2"></div>
+            <div class="num" id="3"></div>
+            <div class="num" id="4"></div>
+            <div class="num" id="5"></div>
+            <div class="num" id="6"></div>
+            <div class="num" id="7"></div>
+            <div class="num" id="8"></div>
+            <div class="num" id="9"></div>
+        </div>
+
+        <div class="restart">
+            <button id="restart">
+                Restart
+                <img class="xo-icon-lg" src="assets/restart.png" alt="refresh">
+            </button>
+        </div>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
