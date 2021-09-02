@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,9 +8,16 @@
     <title>Tic Tac Toe</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="container">
         <div class="game-title">Tic Tac Toe</div>
+        <div class="mode">
+            <select name="mode" id="mode">
+                <option value="easy">Easy</option>
+                <option value="hard">Hard</option>
+            </select>
+        </div>
         <div class="game-player">
             <div class="human">
                 <img class="xo-icon-lg" src="assets/human.png" alt="icon-human">
@@ -24,8 +32,8 @@
                     <img class="xo-icon" src="assets/icon-o.png" alt="icon-o">
                 </div>
                 <div class="score">
-					<p id="score-o">0</p>
-				</div>
+                    <p id="score-o">0</p>
+                </div>
             </div>
             <div class="turn" id="x">
                 <div class="score">
@@ -39,7 +47,7 @@
 
         <div class="wrapper-status">
             <div id="status">
-                <img class="xo-icon-lg" src="assets/human.png" alt="icon-human"> 
+                <img class="xo-icon-lg" src="assets/human.png" alt="icon-human">
                 Turn
             </div>
         </div>
@@ -59,10 +67,11 @@
         <div class="restart">
             <button id="restart">
                 Restart
-                <img class="xo-icon-lg" src="assets/restart.png" alt="refresh">
+                <img class="xo-icon" src="assets/restart.png" alt="refresh">
             </button>
         </div>
     </div>
     <script type="text/javascript" src="script.js"></script>
 </body>
+
 </html>
